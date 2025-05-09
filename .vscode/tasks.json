@@ -1,0 +1,33 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar main",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "prontuario.c",
+                "-o",
+                "prontuario.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Compilar benchmark",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "benchmark.c",
+                "prontuario.c",
+                "-o",
+                "benchmark.exe"
+            ],
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
